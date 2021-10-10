@@ -1,0 +1,25 @@
+<h2>Traer informacion del usuario</h2>
+<br>
+<div class="sizes">
+    <input type="text" class="p-inputtext-lg" placeholder="buscar usuario"  pInputText />
+</div>
+<br>
+<button pButton pRipple type="button" label="Buscar" class="p-button-rounded p-button-info"></button>
+<p-table>
+  <ng-template pTemplate="header">
+      <tr>
+          <th>name</th>
+          <th>username</th>
+          <th>email</th>
+          <th>phone</th>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-car>
+      <tr>
+          <td>{{car.vin}}</td>
+          <td>{{car.year}}</td>
+          <td>{{car.brand}}</td>
+          <td>{{car.color}}</td>
+      </tr>
+  </ng-template>
+</p-table>
