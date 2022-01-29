@@ -7,6 +7,7 @@ import { UsersRoutingModule } from './users-routing.module';
 import { UsersPageComponent } from './pages/users-page/users-page.component';
 import { PrimengModule } from '../utils/primeng/primeng.module';
 import { DetailsUserComponent } from './components/details-user/details-user.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,9 @@ import { DetailsUserComponent } from './components/details-user/details-user.com
   imports: [
     CommonModule,
     UsersRoutingModule,
-    PrimengModule
+    PrimengModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class UsersModule { }

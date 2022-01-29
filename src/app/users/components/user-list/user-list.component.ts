@@ -6,13 +6,8 @@ import { IUsers } from 'src/app/core/interfaces/IUsers';
   templateUrl: './user-list.component.html',
   styleUrls: ['./user-list.component.scss']
 })
-export class UserListComponent implements OnInit {
+export class UserListComponent {
 
   @Input() listUsers;
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {ListboxModule} from 'primeng/listbox';
 import {ButtonModule} from 'primeng/button';
 import {TableModule} from 'primeng/table';
+import {InputTextModule} from 'primeng/inputtext';
 
 
 @NgModule({
@@ -11,13 +12,15 @@ import {TableModule} from 'primeng/table';
     CommonModule,
     ListboxModule,
     ButtonModule,
-    TableModule
+    TableModule,
+    InputTextModule
   ],
   exports: [
     ListboxModule,
     ButtonModule,
     ListboxModule,
-    TableModule
+    TableModule,
+    InputTextModule
   ]
 })
 export class PrimengModule { }

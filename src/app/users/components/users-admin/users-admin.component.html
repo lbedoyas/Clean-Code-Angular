@@ -1,18 +1,20 @@
 <h1>Administracion de usuarios</h1>
 <br>
+<form [formGroup]="form" (ngSubmit)="insert(form.value)">
+  <span class="p-float-label">
+    <input id="float-input" type="text" pInputText formControlName="name">
+    <label for="float-input">Username</label>
+  </span>
+  <br>
+  <br>
+  <span class="p-float-label">
+    <input id="float-input" type="email" pInputText formControlName="email">
+    <label for="float-input">e-mail</label>
+  </span>
+  <br>
 
-<span class="p-float-label">
-  <input id="float-input" type="text" pInputText>
-  <label for="float-input">Username</label>
-</span>
-<br>
-<br>
-<span class="p-float-label">
-  <input id="float-input" type="email" pInputText>
-  <label for="float-input">e-mail</label>
-</span>
-<br>
-<button pButton pRipple type="button" label="Insertar" class="p-button-rounded p-button-secondary"></button>
+<button pButton pRipple type="submit" label="Insertar" class="p-button-rounded p-button-secondary"></button>
+</form>
 <br>
 <br>
 <button pButton pRipple type="button" label="Actualizar" class="p-button-rounded p-button-success"></button>
